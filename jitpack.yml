@@ -1,0 +1,7 @@
+version: 3.0
+install:
+  steps:
+    - name: Install JAR
+      script:
+        - FILE="-Dfile=McImage-1.0.0.jar"
+        - mvn install:install-file $FILE -DgroupId=wsdydeni.plugin -DartifactId=compressRes -Dversion=1.0.0 -Dpackaging=jar -DpomFile=McImage-1.0.0.pom
